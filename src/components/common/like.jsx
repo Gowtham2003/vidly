@@ -1,13 +1,13 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-const Like = ({ isLiked, onLike }) => {
+const Like = ({ isLiked, onClick }) => {
   let attr = ["far", "heart"];
   if (isLiked) attr = "heart";
 
   return (
     <FontAwesomeIcon
       icon={attr}
-      onClick={onLike}
+      onClick={onClick}
       style={{ cursor: "pointer" }}
     />
   );
