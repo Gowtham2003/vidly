@@ -16,11 +16,13 @@ import NotFound from "./components/notFound";
 import Rentals from "./components/rentals";
 import LoginForm from "./components/loginForm";
 import RegisterForm from "./components/registerForm";
+import { ToastContainer } from "react-toastify";
 
 library.add(far, faHeart, faSortUp, faSortDown);
 function App() {
   return (
     <React.Fragment>
+      <ToastContainer/>
       <Navbar />
       <main className="container">
         <Switch>
